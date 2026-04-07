@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Remolques Triana — Fabricantes de remolques de alta calidad en Aguascalientes, México. Más de 25 años de experiencia en remolques para carga, ganadero, pipa, volteo, cama baja y más." />
+  <meta name="keywords" content="remolques México, fabricantes de remolques, remolques Aguascalientes, remolque cama baja, remolque ganadero, remolque pipa, remolque volteo, transporte de carga, maquinaria, Remolques Triana" />
+  <meta name="author" content="Remolques Triana" />
+  <meta property="og:title" content="Remolques Triana — Fabricantes de Remolques de Alta Calidad" />
+  <meta property="og:description" content="Más de 25 años fabricando remolques para transporte de carga, maquinaria, ganado y líquidos en México." />
+  <meta property="og:type" content="website" />
+  <title>Remolques Triana | Fabricantes de Remolques en México</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===========================
+     NAV
+     =========================== -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <!-- Logo -->
+    <a href="#inicio" class="nav__logo" aria-label="Remolques Triana — inicio">
+      <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <rect width="36" height="36" rx="4" fill="#C8102E"/>
+        <path d="M5 24h26M5 24l3-8h20l3 8" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="11" cy="27" r="3" fill="#fff"/>
+        <circle cx="25" cy="27" r="3" fill="#fff"/>
+        <rect x="10" y="13" width="16" height="6" rx="1" fill="#fff" opacity=".3"/>
+      </svg>
+      <span class="nav__logo-text">Remolques <span>Triana</span></span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links" role="list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="btn btn-primary nav__cta">Cotizar</a>
+
+    <!-- Mobile toggle -->
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile" id="nav-mobile" role="navigation" aria-label="Menú móvil">
+  <a href="#inicio"    onclick="closeMenu()">Inicio</a>
+  <a href="#nosotros"  onclick="closeMenu()">Nosotros</a>
+  <a href="#productos" onclick="closeMenu()">Productos</a>
+  <a href="#contacto"  onclick="closeMenu()">Contacto</a>
+  <a href="#contacto"  onclick="closeMenu()" class="btn btn-primary" style="margin-top:.5rem;justify-content:center;display:flex;">Cotizar</a>
+</div>
+
+
+<!-- ===========================
+     HERO
+     =========================== -->
+<section class="hero" id="inicio" aria-label="Inicio">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero__content reveal">
+      <span class="hero__eyebrow">Fabricantes en México</span>
+      <h1 class="hero__title">
+        Fabricamos remolques de <span>alta calidad</span> para cualquier necesidad
+      </h1>
+      <p class="hero__subtitle">
+        Más de 25 años de experiencia en soluciones de transporte confiables para maquinaria, ganado, carga y líquidos en toda la República Mexicana.
+      </p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Solicitar cotización
+        </a>
+        <a href="#productos" class="btn btn-outline">Ver catálogo</a>
+      </div>
+      <div class="hero__stats" aria-label="Datos de la empresa">
+        <div class="hero__stat">
+          <strong>+25</strong>
+          <span>Años de experiencia</span>
+        </div>
+        <div class="hero__stat">
+          <strong>10+</strong>
+          <span>Modelos de remolque</span>
+        </div>
+        <div class="hero__stat">
+          <strong>100%</strong>
+          <span>Fabricación nacional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     NOSOTROS
+     =========================== -->
+<section class="nosotros" id="nosotros" aria-labelledby="nosotros-title">
+  <div class="container">
+
+    <!-- Text col -->
+    <div class="nosotros__text reveal">
+      <p class="section-label">Sobre nosotros</p>
+      <h2 class="section-title" id="nosotros-title">Empresa familiar con décadas de tradición</h2>
+      <p class="nosotros__desc">
+        Remolques Triana es una empresa 100% mexicana fundada con la visión de ofrecer soluciones de transporte robustas, seguras y a la medida de cada cliente. Con sede en Aguascalientes y más de 25 años en el mercado, hemos fabricado y entregado remolques para los sectores agrícola, ganadero, industrial y de carga en toda la República.
+      </p>
+      <p class="nosotros__desc" style="margin-top:.75rem;">
+        Cada remolque sale de nuestro taller con los más altos estándares de calidad, materiales de primera y la garantía de una familia que pone su nombre en cada soldadura.
+      </p>
+    </div>
+
+    <!-- Values col -->
+    <div class="nosotros__values">
+      <!-- Calidad -->
+      <article class="value-card reveal" aria-label="Compromiso con la calidad">
+        <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <h3 class="value-card__title">Compromiso con la calidad</h3>
+        <p class="value-card__desc">Utilizamos materiales certificados y procesos de fabricación rigurosos para garantizar remolques duraderos y seguros.</p>
+      </article>
+
+      <!-- Innovación -->
+      <article class="value-card reveal" aria-label="Innovación constante">
+        <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+        <h3 class="value-card__title">Innovación constante</h3>
+        <p class="value-card__desc">Nos mantenemos a la vanguardia incorporando nuevos diseños y tecnologías para responder a las necesidades del mercado.</p>
+      </article>
+
+      <!-- Valor agregado -->
+      <article class="value-card reveal" aria-label="Valor agregado">
+        <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <h3 class="value-card__title">Valor agregado</h3>
+        <p class="value-card__desc">Ofrecemos asesoría personalizada, servicio posventa y disponibilidad de refacciones para maximizar la vida útil de tu remolque.</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===========================
+     PRODUCTOS
+     =========================== -->
+<section class="productos" id="productos" aria-labelledby="productos-title">
+  <div class="container">
+    <div class="productos__header reveal">
+      <p class="section-label">Catálogo de productos</p>
+      <h2 class="section-title" id="productos-title">Nuestros remolques</h2>
+      <p class="section-subtitle">Fabricados a la medida de cada necesidad, con la calidad y resistencia que tu negocio exige.</p>
+    </div>
+
+    <div class="productos__grid">
+
+      <!-- 1. Cama Baja -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Cama Baja">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="20" width="40" height="10" rx="2"/><circle cx="12" cy="34" r="4"/><circle cx="36" cy="34" r="4"/><path d="M4 25h40M14 20V16h20v4"/></svg>
+          Cama Baja
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Cama Baja</h3>
+          <p class="product-card__desc">Ideal para transportar maquinaria pesada y vehículos grandes, con un diseño que facilita la carga y descarga gracias a su perfil bajo.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 2. Ganadero -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Ganadero">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="14" width="40" height="18" rx="2"/><path d="M4 32h40M16 14v18M32 14v18M4 22h40"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/></svg>
+          Ganadero
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Ganadero</h3>
+          <p class="product-card__desc">Diseñado para el transporte seguro y cómodo del ganado, con divisores y ventilación para garantizar el bienestar animal durante el trayecto.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 3. Plataforma -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Plataforma">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="22" width="40" height="6" rx="1"/><circle cx="12" cy="34" r="4"/><circle cx="36" cy="34" r="4"/><path d="M8 22V18h32v4"/></svg>
+          Plataforma
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Plataforma</h3>
+          <p class="product-card__desc">Perfecto para carga general como materiales y maquinaria, con una estructura elevada que facilita el acceso y la sujeción de la carga.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 4. Pipa -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Pipa">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="24" cy="22" rx="18" ry="10"/><path d="M6 22h36M24 12v20"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/></svg>
+          Pipa
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Pipa</h3>
+          <p class="product-card__desc">Diseñado para el transporte seguro de líquidos, con sistemas especializados que garantizan la contención y estabilidad en cada viaje.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 5. Dolly -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Dolly">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="10" y="18" width="28" height="8" rx="2"/><circle cx="18" cy="32" r="4"/><circle cx="30" cy="32" r="4"/><path d="M24 18V10M18 10h12"/></svg>
+          Dolly
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Dolly</h3>
+          <p class="product-card__desc">Remolque auxiliar que permite transportar cargas pesadas de manera más eficiente, mejorando la distribución del peso en largas distancias.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 6. Caja Seca -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Caja Seca">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="12" width="40" height="22" rx="2"/><path d="M4 24h40M16 12v22M32 12v22"/><circle cx="12" cy="38" r="4"/><circle cx="36" cy="38" r="4"/></svg>
+          Caja Seca
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Caja Seca</h3>
+          <p class="product-card__desc">Protege las mercancías de las inclemencias del tiempo, ideal para productos sensibles a la humedad, polvo y variaciones de temperatura.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 7. Cuello de Ganso -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Cuello de Ganso">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 28h12V16h24v12H4"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/><path d="M16 16l4-8h8l4 8"/></svg>
+          Cuello de Ganso
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Cuello de Ganso</h3>
+          <p class="product-card__desc">Gran capacidad y diseño flexible para cargas pesadas y de gran tamaño: maquinaria, equipo especializado y ganado en volumen.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 8. Reciclado -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Reciclado">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M24 6l4 8h-8l4-8z"/><path d="M10 30l-4 8 8-1-4-7z"/><path d="M38 30l4 8-8-1 4-7z"/><path d="M20 14l-10 16M28 14l10 16M14 30h20"/></svg>
+          Reciclado
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Reciclado</h3>
+          <p class="product-card__desc">Perfecto para transportar materiales reciclables, ayudando en la distribución eficiente de desechos y apoyando la gestión ambiental.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 9. Hauler -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Hauler">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="22" width="40" height="6" rx="1"/><path d="M10 22V16l4-4h16l4 4v6"/><circle cx="14" cy="34" r="4"/><circle cx="34" cy="34" r="4"/></svg>
+          Hauler
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Hauler</h3>
+          <p class="product-card__desc">Diseñado para transportar vehículos con total seguridad, asegurando que lleguen a su destino en perfectas condiciones sin daños.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+      <!-- 10. Volteo -->
+      <article class="product-card reveal">
+        <div class="product-card__img-placeholder" aria-label="Remolque Volteo">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 30h36l-6-16H10L4 30z"/><path d="M4 30l6 6h24l6-6"/><circle cx="14" cy="38" r="4"/><circle cx="34" cy="38" r="4"/><path d="M28 14l8 0M32 11v6"/></svg>
+          Volteo
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Volteo</h3>
+          <p class="product-card__desc">Ideal para cargas que requieren flexibilidad y facilidad de maniobra en la descarga, como tierra, grava, arena y materiales a granel.</p>
+          <a href="#contacto" class="btn btn-outline">Cotizar</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     REFACCIONES
+     =========================== -->
+<section class="refacciones" id="refacciones" aria-labelledby="refacciones-title">
+  <div class="container">
+    <div class="refacciones__icon-wrap reveal" aria-hidden="true">
+      <svg class="refacciones__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </svg>
+    </div>
+    <div class="reveal">
+      <p class="section-label">Servicio adicional</p>
+      <h2 class="section-title" id="refacciones-title">Refacciones para remolques</h2>
+      <p class="nosotros__desc" style="margin-top:.75rem;">
+        Además de fabricar remolques, en Remolques Triana contamos con un amplio inventario de refacciones originales y compatibles para mantener tu equipo en óptimas condiciones. Consulta disponibilidad y precios directamente con nuestro equipo.
+      </p>
+      <ul class="refacciones__list" style="margin-top:1.25rem;">
+        <li>Ejes y suspensiones</li>
+        <li>Llantas y rines especializados</li>
+        <li>Sistemas de frenos y luces</li>
+        <li>Enganches y accesorios de sujeción</li>
+        <li>Estructuras metálicas y componentes de carrocería</li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary" style="margin-top:1.75rem;">Consultar refacciones</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     CTA BAND
+     =========================== -->
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container reveal">
+    <h2 class="cta-band__title" id="cta-title">Contáctanos hoy para un presupuesto personalizado</h2>
+    <p class="cta-band__sub">Cuéntanos qué necesitas transportar y nuestro equipo te diseñará la solución ideal.</p>
+    <a href="#contacto" class="btn btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Solicitar cotización
+    </a>
+  </div>
+</section>
+
+
+<!-- ===========================
+     CONTACTO
+     =========================== -->
+<section class="contacto" id="contacto" aria-labelledby="contacto-title">
+  <div class="container">
+    <div style="margin-bottom:2.5rem;" class="reveal">
+      <p class="section-label">Contáctanos</p>
+      <h2 class="section-title" id="contacto-title">Estamos para atenderte</h2>
+      <p class="section-subtitle">Escríbenos, llámanos o visítanos. Con gusto te asesoramos sin compromiso.</p>
+    </div>
+
+    <div class="contacto__grid">
+
+      <!-- Form -->
+      <div class="reveal">
+        <h3 class="contacto__form-title">Solicitar cotización</h3>
+        <form class="form" id="contact-form" novalidate aria-label="Formulario de contacto">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="449 000 0000" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email" />
+          </div>
+          <div class="form__group">
+            <label for="producto">Producto de interés</label>
+            <select id="producto" name="producto">
+              <option value="">— Selecciona un producto —</option>
+              <option>Cama Baja</option>
+              <option>Ganadero</option>
+              <option>Plataforma</option>
+              <option>Pipa</option>
+              <option>Dolly</option>
+              <option>Caja Seca</option>
+              <option>Cuello de Ganso</option>
+              <option>Reciclado</option>
+              <option>Hauler</option>
+              <option>Volteo</option>
+              <option>Refacciones</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas transportar, dimensiones, peso aproximado u otra información relevante..." required></textarea>
+          </div>
+          <div class="form__submit">
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Enviar mensaje
+            </button>
+          </div>
+          <div class="form__success" id="form-success" role="alert" aria-live="polite">
+            ¡Mensaje enviado! Nos pondremos en contacto contigo a la brevedad.
+          </div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="reveal">
+        <div class="contacto__info">
+
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <p class="info-item__label">Dirección</p>
+              <p class="info-item__value">
+                Av. Siglo XXI 804, San Pedro<br>
+                20280 Aguascalientes, México
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.02-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <p class="info-item__label">Teléfono</p>
+              <p class="info-item__value">
+                <a href="tel:+524499600330">449 960 0330</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <p class="info-item__label">Correo electrónico</p>
+              <p class="info-item__value">
+                <a href="mailto:remolquestriana@hotmail.com">remolquestriana@hotmail.com</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social -->
+        <div class="contacto__social">
+          <p class="contacto__social-title">Síguenos en redes sociales</p>
+          <div class="social-links">
+            <a href="https://instagram.com/remolquestriana" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram de Remolques Triana">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @remolquestriana
+            </a>
+            <a href="https://facebook.com/remolquestriana" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook de Remolques Triana">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contacto__map" aria-label="Mapa de ubicación">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.+Siglo+XXI+804,+San+Pedro,+Aguascalientes,+M%C3%A9xico&output=embed"
+            title="Ubicación de Remolques Triana en Aguascalientes"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     FOOTER
+     =========================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__logo">Remolques <span>Triana</span></span>
+
+      <nav class="footer__links" aria-label="Links rápidos del footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#refacciones">Refacciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <p class="footer__copy">
+        &copy; <span id="year"></span> <span>Remolques Triana</span>. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===========================
+     WHATSAPP BUTTON
+     =========================== -->
+<a href="https://wa.me/524499600330?text=Hola%2C%20me%20interesa%20cotizar%20un%20remolque"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-btn"
+   aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ===========================
+     JAVASCRIPT
+     =========================== -->
+<script>
+  // Current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---- Mobile nav ----
+  const toggle   = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('nav-mobile');
+
+  toggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  // ---- Scroll reveal ----
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer  = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        // Staggered delay based on siblings
+        const siblings = entry.target.parentElement.querySelectorAll('.reveal');
+        let idx = Array.from(siblings).indexOf(entry.target);
+        entry.target.style.transitionDelay = (idx * 80) + 'ms';
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealEls.forEach(el => observer.observe(el));
+
+  // ---- Contact form ----
+  const form       = document.getElementById('contact-form');
+  const submitBtn  = document.getElementById('submit-btn');
+  const successMsg = document.getElementById('form-success');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Basic validation
+    const nombre  = form.nombre.value.trim();
+    const email   = form.email.value.trim();
+    const mensaje = form.mensaje.value.trim();
+
+    if (!nombre || !email || !mensaje) {
+      const firstEmpty = !nombre ? form.nombre : !email ? form.email : form.mensaje;
+      firstEmpty.focus();
+      firstEmpty.style.borderColor = '#C8102E';
+      setTimeout(() => { firstEmpty.style.borderColor = ''; }, 2000);
+      return;
+    }
+
+    // Simulate send
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+
+    setTimeout(() => {
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Enviar mensaje`;
+      successMsg.style.display = 'block';
+      setTimeout(() => { successMsg.style.display = 'none'; }, 6000);
+    }, 1200);
+  });
+
+  // Clear red border on input
+  form.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('input', () => { el.style.borderColor = ''; });
+  });
+</script>
+
+</body>
+</html>
