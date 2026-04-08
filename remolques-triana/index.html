@@ -36,6 +36,7 @@
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#productos">Productos</a></li>
+      <li><a href="#personalizados">Personalizados</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
     <a href="#contacto" class="btn btn-primary nav__cta">Cotizar</a>
@@ -52,6 +53,7 @@
   <a href="#inicio"    onclick="closeMenu()">Inicio</a>
   <a href="#nosotros"  onclick="closeMenu()">Nosotros</a>
   <a href="#productos" onclick="closeMenu()">Productos</a>
+  <a href="#personalizados" onclick="closeMenu()">Personalizados</a>
   <a href="#contacto"  onclick="closeMenu()">Contacto</a>
   <a href="#contacto"  onclick="closeMenu()" class="btn btn-primary" style="margin-top:.5rem;justify-content:center;display:flex;">Cotizar</a>
 </div>
@@ -129,7 +131,7 @@
       <!-- Innovación -->
       <article class="value-card reveal" aria-label="Innovación constante">
         <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          <circle cx="12" cy="8" r="5"/><path d="M9 13.5V21h6v-7.5M9 17h6"/><path d="M10 8h.01M14 8h.01"/>
         </svg>
         <h3 class="value-card__title">Innovación constante</h3>
         <p class="value-card__desc">Nos mantenemos a la vanguardia incorporando nuevos diseños y tecnologías para responder a las necesidades del mercado.</p>
@@ -161,141 +163,39 @@
       <p class="section-subtitle">Fabricados a la medida de cada necesidad, con la calidad y resistencia que tu negocio exige.</p>
     </div>
 
-    <div class="productos__grid">
-
-      <!-- 1. Cama Baja -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Cama Baja">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="20" width="40" height="10" rx="2"/><circle cx="12" cy="34" r="4"/><circle cx="36" cy="34" r="4"/><path d="M4 25h40M14 20V16h20v4"/></svg>
-          Cama Baja
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Cama Baja</h3>
-          <p class="product-card__desc">Ideal para transportar maquinaria pesada y vehículos grandes, con un diseño que facilita la carga y descarga gracias a su perfil bajo.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 2. Ganadero -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Ganadero">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="14" width="40" height="18" rx="2"/><path d="M4 32h40M16 14v18M32 14v18M4 22h40"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/></svg>
-          Ganadero
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Ganadero</h3>
-          <p class="product-card__desc">Diseñado para el transporte seguro y cómodo del ganado, con divisores y ventilación para garantizar el bienestar animal durante el trayecto.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 3. Plataforma -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Plataforma">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="22" width="40" height="6" rx="1"/><circle cx="12" cy="34" r="4"/><circle cx="36" cy="34" r="4"/><path d="M8 22V18h32v4"/></svg>
-          Plataforma
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Plataforma</h3>
-          <p class="product-card__desc">Perfecto para carga general como materiales y maquinaria, con una estructura elevada que facilita el acceso y la sujeción de la carga.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 4. Pipa -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Pipa">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="24" cy="22" rx="18" ry="10"/><path d="M6 22h36M24 12v20"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/></svg>
-          Pipa
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Pipa</h3>
-          <p class="product-card__desc">Diseñado para el transporte seguro de líquidos, con sistemas especializados que garantizan la contención y estabilidad en cada viaje.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 5. Dolly -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Dolly">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="10" y="18" width="28" height="8" rx="2"/><circle cx="18" cy="32" r="4"/><circle cx="30" cy="32" r="4"/><path d="M24 18V10M18 10h12"/></svg>
-          Dolly
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Dolly</h3>
-          <p class="product-card__desc">Remolque auxiliar que permite transportar cargas pesadas de manera más eficiente, mejorando la distribución del peso en largas distancias.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 6. Caja Seca -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Caja Seca">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="12" width="40" height="22" rx="2"/><path d="M4 24h40M16 12v22M32 12v22"/><circle cx="12" cy="38" r="4"/><circle cx="36" cy="38" r="4"/></svg>
-          Caja Seca
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Caja Seca</h3>
-          <p class="product-card__desc">Protege las mercancías de las inclemencias del tiempo, ideal para productos sensibles a la humedad, polvo y variaciones de temperatura.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 7. Cuello de Ganso -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Cuello de Ganso">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 28h12V16h24v12H4"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/><path d="M16 16l4-8h8l4 8"/></svg>
-          Cuello de Ganso
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Cuello de Ganso</h3>
-          <p class="product-card__desc">Gran capacidad y diseño flexible para cargas pesadas y de gran tamaño: maquinaria, equipo especializado y ganado en volumen.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 8. Reciclado -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Reciclado">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M24 6l4 8h-8l4-8z"/><path d="M10 30l-4 8 8-1-4-7z"/><path d="M38 30l4 8-8-1 4-7z"/><path d="M20 14l-10 16M28 14l10 16M14 30h20"/></svg>
-          Reciclado
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Reciclado</h3>
-          <p class="product-card__desc">Perfecto para transportar materiales reciclables, ayudando en la distribución eficiente de desechos y apoyando la gestión ambiental.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 9. Hauler -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Hauler">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="22" width="40" height="6" rx="1"/><path d="M10 22V16l4-4h16l4 4v6"/><circle cx="14" cy="34" r="4"/><circle cx="34" cy="34" r="4"/></svg>
-          Hauler
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Hauler</h3>
-          <p class="product-card__desc">Diseñado para transportar vehículos con total seguridad, asegurando que lleguen a su destino en perfectas condiciones sin daños.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
-      <!-- 10. Volteo -->
-      <article class="product-card reveal">
-        <div class="product-card__img-placeholder" aria-label="Remolque Volteo">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 30h36l-6-16H10L4 30z"/><path d="M4 30l6 6h24l6-6"/><circle cx="14" cy="38" r="4"/><circle cx="34" cy="38" r="4"/><path d="M28 14l8 0M32 11v6"/></svg>
-          Volteo
-        </div>
-        <div class="product-card__body">
-          <h3 class="product-card__name">Volteo</h3>
-          <p class="product-card__desc">Ideal para cargas que requieren flexibilidad y facilidad de maniobra en la descarga, como tierra, grava, arena y materiales a granel.</p>
-          <a href="#contacto" class="btn btn-outline">Cotizar</a>
-        </div>
-      </article>
-
+    <!-- Filter tabs -->
+    <div class="productos__filters reveal" role="tablist" aria-label="Filtrar por tipo">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      <button class="filter-btn" data-filter="carga" role="tab" aria-selected="false">Carga</button>
+      <button class="filter-btn" data-filter="ganado" role="tab" aria-selected="false">Ganadero</button>
+      <button class="filter-btn" data-filter="liquidos" role="tab" aria-selected="false">Líquidos</button>
+      <button class="filter-btn" data-filter="especial" role="tab" aria-selected="false">Especiales</button>
     </div>
+
+    <div class="productos__grid" id="productos-grid"></div>
   </div>
 </section>
+
+<!-- ===========================
+     PRODUCT MODAL
+     =========================== -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal">
+    <button class="modal__close" id="modal-close" aria-label="Cerrar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal__gallery" id="modal-gallery"></div>
+    <div class="modal__body">
+      <p class="section-label" id="modal-tag"></p>
+      <h2 class="modal__title" id="modal-title"></h2>
+      <p class="modal__desc" id="modal-desc"></p>
+      <div class="modal__specs" id="modal-specs"></div>
+      <div class="modal__actions">
+        <a href="#contacto" class="btn btn-primary modal__cta" id="modal-cta">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ===========================
@@ -322,6 +222,78 @@
         <li>Estructuras metálicas y componentes de carrocería</li>
       </ul>
       <a href="#contacto" class="btn btn-primary" style="margin-top:1.75rem;">Consultar refacciones</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===========================
+     PERSONALIZADOS
+     =========================== -->
+<section class="personalizado" id="personalizados" aria-labelledby="personalizado-title">
+  <div class="container">
+    <div class="personalizado__grid">
+      <div class="personalizado__text reveal">
+        <p class="section-label">Hecho a tu medida</p>
+        <h2 class="section-title" id="personalizado-title">Remolques personalizados</h2>
+        <p class="nosotros__desc" style="margin-top:.75rem;">
+          En Remolques Triana entendemos que cada cliente tiene necesidades únicas. Por eso fabricamos remolques 100% a la medida: dimensiones, capacidad de carga, materiales, sistemas de sujeción y acabados según tus requerimientos específicos.
+        </p>
+        <ul class="personalizado__list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Dimensiones y capacidad a tu especificación
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Selección de materiales: acero estructural, aluminio, inoxidable
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Sistemas de frenos, luces y señalización incluidos
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Acabado con pintura anticorrosión y diseño de tu marca
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Asesoría técnica sin costo durante todo el proceso
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary" style="margin-top:2rem;">Cotizar remolque personalizado</a>
+      </div>
+      <div class="personalizado__visual reveal" aria-hidden="true">
+        <div class="personalizado__card">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2" class="personalizado__icon">
+            <rect x="8" y="28" width="60" height="24" rx="3"/>
+            <circle cx="20" cy="56" r="7"/><circle cx="58" cy="56" r="7"/>
+            <path d="M8 40h60M28 28V22h24v6"/>
+            <path d="M50 34h8M50 38h8M50 42h8" stroke-dasharray="2 2"/>
+            <path d="M16 34l4 4-4 4" stroke-linecap="round"/>
+          </svg>
+          <p class="personalizado__card-title">Diseño a medida</p>
+          <p class="personalizado__card-sub">Cuéntanos tu proyecto y lo hacemos realidad</p>
+        </div>
+        <div class="personalizado__steps">
+          <div class="step">
+            <span class="step__num">1</span>
+            <div><strong>Consulta</strong><p>Nos describes tus necesidades</p></div>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <div><strong>Diseño</strong><p>Elaboramos planos y cotización</p></div>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <div><strong>Fabricación</strong><p>Construimos con control de calidad</p></div>
+          </div>
+          <div class="step">
+            <span class="step__num">4</span>
+            <div><strong>Entrega</strong><p>Tu remolque listo para rodar</p></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -518,41 +490,345 @@
      JAVASCRIPT
      =========================== -->
 <script>
-  // Current year
+  // ---- Current year ----
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // ---- Mobile nav ----
-  const toggle   = document.getElementById('nav-toggle');
+  const toggle     = document.getElementById('nav-toggle');
   const mobileMenu = document.getElementById('nav-mobile');
-
   toggle.addEventListener('click', () => {
     const open = mobileMenu.classList.toggle('open');
     toggle.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', open);
   });
-
   function closeMenu() {
     mobileMenu.classList.remove('open');
     toggle.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
   }
 
+  // ---- Product data ----
+  const PRODUCTS = [
+    {
+      id: 'cama-baja',
+      name: 'Cama Baja',
+      tag: 'Carga pesada',
+      filter: 'carga',
+      short: 'Ideal para maquinaria pesada y vehículos grandes, con perfil bajo que facilita la carga y descarga.',
+      desc: 'El remolque Cama Baja de Remolques Triana está diseñado específicamente para el transporte de maquinaria pesada, equipo de construcción y vehículos de gran tamaño. Su plataforma baja reduce el centro de gravedad, mejorando la estabilidad durante el transporte y facilitando las maniobras de carga y descarga.',
+      specs: [
+        { label: 'Capacidad', value: 'Hasta 60 toneladas' },
+        { label: 'Longitud', value: 'Configurable 8–18 m' },
+        { label: 'Material', value: 'Acero estructural A-36' },
+        { label: 'Ejes', value: '2 a 5 ejes según carga' },
+        { label: 'Uso', value: 'Maquinaria, excavadoras, tractores' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+        'https://images.unsplash.com/photo-1581094480484-e1ae36c5c0d7?w=800&q=80',
+      ]
+    },
+    {
+      id: 'ganadero',
+      name: 'Ganadero',
+      tag: 'Transporte animal',
+      filter: 'ganado',
+      short: 'Diseñado para el transporte seguro y cómodo del ganado, con divisores y ventilación.',
+      desc: 'El remolque Ganadero cuenta con divisores internos regulables, amplia ventilación lateral y piso antideslizante para garantizar el bienestar animal durante el trayecto. Fabricado con perfiles de acero resistentes y revestimientos que facilitan la limpieza y desinfección.',
+      specs: [
+        { label: 'Capacidad', value: '20–40 cabezas (bovino)' },
+        { label: 'Ventilación', value: 'Perfiles laterales abiertos' },
+        { label: 'Piso', value: 'Antideslizante con rejillas' },
+        { label: 'Divisores', value: 'Regulables y removibles' },
+        { label: 'Acceso', value: 'Rampa trasera abatible' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80',
+        'https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80',
+        'https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?w=800&q=80',
+      ]
+    },
+    {
+      id: 'plataforma',
+      name: 'Plataforma',
+      tag: 'Carga general',
+      filter: 'carga',
+      short: 'Perfecto para carga general como materiales y maquinaria, estructura elevada con fácil acceso.',
+      desc: 'El remolque Plataforma es la solución más versátil para el transporte de carga general. Su superficie plana y resistente permite acomodar una amplia variedad de mercancías, con puntos de anclaje distribuidos estratégicamente para asegurar la carga de forma segura.',
+      specs: [
+        { label: 'Capacidad', value: 'Hasta 30 toneladas' },
+        { label: 'Longitud', value: '6–14 m' },
+        { label: 'Ancho', value: '2.44 m estándar' },
+        { label: 'Anclas', value: 'Puntos cada 60 cm' },
+        { label: 'Uso', value: 'Materiales, maquinaria ligera, estructura' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+        'https://images.unsplash.com/photo-1543191949-a4da4e89d3db?w=800&q=80',
+        'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+      ]
+    },
+    {
+      id: 'pipa',
+      name: 'Pipa',
+      tag: 'Líquidos',
+      filter: 'liquidos',
+      short: 'Transporte seguro de líquidos con sistemas especializados de contención y estabilidad.',
+      desc: 'La Pipa de Remolques Triana está fabricada en acero inoxidable o carbono según el tipo de líquido a transportar. Incluye sistemas de válvulas de seguridad, bafles internos anti-oleaje y acceso superior para limpieza. Ideal para agua, combustibles, químicos industriales y alimentos.',
+      specs: [
+        { label: 'Capacidad', value: '5,000–20,000 litros' },
+        { label: 'Material', value: 'Acero inox 304 / carbono' },
+        { label: 'Bafles', value: 'Internos anti-oleaje' },
+        { label: 'Válvulas', value: 'Seguridad y descarga inferior' },
+        { label: 'Uso', value: 'Agua, combustible, químicos, alimentos' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+        'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80',
+        'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80',
+      ]
+    },
+    {
+      id: 'dolly',
+      name: 'Dolly',
+      tag: 'Auxiliar',
+      filter: 'especial',
+      short: 'Remolque auxiliar que mejora la eficiencia en el transporte de cargas pesadas de largo alcance.',
+      desc: 'El Dolly es un remolque auxiliar de ejes que se conecta entre la cabeza tractora y el semirremolque principal, permitiendo distribuir la carga en más ejes y cumplir con regulaciones de peso por eje. Ideal para convoyes de larga distancia con cargas de gran volumen.',
+      specs: [
+        { label: 'Ejes', value: '1 o 2 ejes' },
+        { label: 'Conexión', value: 'Quinta rueda estándar' },
+        { label: 'Frenos', value: 'Neumáticos ABS' },
+        { label: 'Suspensión', value: 'Mecánica o neumática' },
+        { label: 'Uso', value: 'Convoy, distribución de peso' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1567449303183-ae0d6ed1498f?w=800&q=80',
+        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80',
+        'https://images.unsplash.com/photo-1616804872656-2e0c2e0b54b3?w=800&q=80',
+      ]
+    },
+    {
+      id: 'caja-seca',
+      name: 'Caja Seca',
+      tag: 'Carga protegida',
+      filter: 'carga',
+      short: 'Protege las mercancías de la intemperie, ideal para productos sensibles a la humedad y temperatura.',
+      desc: 'La Caja Seca ofrece protección completa para mercancías sensibles. Fabricada con paneles de aluminio o fibra de vidrio sobre estructura de acero, proporciona un ambiente cerrado y hermético. Incluye puertas traseras de doble hoja con sistema de seguridad y rieles laterales para paletas.',
+      specs: [
+        { label: 'Longitud', value: '48 ft / 53 ft (estándar)' },
+        { label: 'Paredes', value: 'Aluminio o fibra de vidrio' },
+        { label: 'Piso', value: 'Madera de oak reforzada' },
+        { label: 'Carga', value: 'Hasta 24 toneladas' },
+        { label: 'Uso', value: 'Electrodomésticos, alimentos, textiles' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+        'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80',
+        'https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=800&q=80',
+      ]
+    },
+    {
+      id: 'cuello-ganso',
+      name: 'Cuello de Ganso',
+      tag: 'Alta capacidad',
+      filter: 'carga',
+      short: 'Gran capacidad para cargas pesadas y de gran tamaño: maquinaria, equipo y ganado en volumen.',
+      desc: 'El remolque Cuello de Ganso combina la versatilidad de una plataforma con la capacidad de carga de una cama baja. Su diseño con cuello rebajado permite cargar alturas mayores cumpliendo con los límites de altura de circulación. Ideal para proyectos de construcción e industria pesada.',
+      specs: [
+        { label: 'Capacidad', value: 'Hasta 80 toneladas' },
+        { label: 'Longitud', value: '12–20 m' },
+        { label: 'Cuello', value: 'Rebajado hidráulico opcional' },
+        { label: 'Ejes', value: '3 a 6 ejes' },
+        { label: 'Uso', value: 'Grúas, generadores, transformadores' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80',
+        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+      ]
+    },
+    {
+      id: 'reciclado',
+      name: 'Reciclado',
+      tag: 'Ambiental',
+      filter: 'especial',
+      short: 'Perfecto para transportar materiales reciclables con distribución eficiente de residuos.',
+      desc: 'El remolque Reciclado está diseñado para la recolección y transporte de materiales reciclables. Cuenta con compartimentos separados, paredes altas para mayor volumen y sistema de descarga por volteo o compuerta trasera. Contribuye a la economía circular y gestión eficiente de residuos.',
+      specs: [
+        { label: 'Volumen', value: 'Hasta 80 m³' },
+        { label: 'Descarga', value: 'Volteo hidráulico o compuerta' },
+        { label: 'Compartimentos', value: '2–4 divisiones' },
+        { label: 'Paredes', value: 'Acero de alta resistencia' },
+        { label: 'Uso', value: 'Cartón, PET, metales, orgánicos' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80',
+        'https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=800&q=80',
+        'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80',
+      ]
+    },
+    {
+      id: 'hauler',
+      name: 'Hauler',
+      tag: 'Vehículos',
+      filter: 'especial',
+      short: 'Diseñado para transportar vehículos asegurando que lleguen en perfectas condiciones.',
+      desc: 'El Hauler de Remolques Triana está optimizado para el transporte de automóviles, camionetas y maquinaria ligera. Sus rampas de acceso ajustables, sistema de amarre de 4 puntos por vehículo y protección de carrocería garantizan la seguridad de cada unidad transportada.',
+      specs: [
+        { label: 'Capacidad', value: '2–6 vehículos' },
+        { label: 'Rampas', value: 'Hidráulicas ajustables' },
+        { label: 'Amarre', value: '4 puntos por vehículo' },
+        { label: 'Pisos', value: '1 o 2 niveles' },
+        { label: 'Uso', value: 'Autos, camionetas, motos' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
+        'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80',
+        'https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=800&q=80',
+      ]
+    },
+    {
+      id: 'volteo',
+      name: 'Volteo',
+      tag: 'Descarga rápida',
+      filter: 'especial',
+      short: 'Ideal para cargas que requieren descarga rápida y fácil: tierra, grava, arena y materiales a granel.',
+      desc: 'El remolque Volteo cuenta con sistema hidráulico de elevación que permite la descarga rápida de materiales a granel. Fabricado con acero de alta resistencia al desgaste, es ideal para la industria de la construcción, minería y agricultura. Disponible en descarga trasera, lateral o combinada.',
+      specs: [
+        { label: 'Capacidad', value: '12–30 m³' },
+        { label: 'Hidráulico', value: 'Cilindro telescópico' },
+        { label: 'Inclinación', value: 'Hasta 55°' },
+        { label: 'Acero', value: 'AR450 resistente a abrasión' },
+        { label: 'Uso', value: 'Tierra, grava, arena, escombro' },
+      ],
+      photos: [
+        'https://images.unsplash.com/photo-1545239351-ef35f43d514b?w=800&q=80',
+        'https://images.unsplash.com/photo-1581094480484-e1ae36c5c0d7?w=800&q=80',
+        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+      ]
+    },
+  ];
+
+  // ---- Render product cards ----
+  function renderCards(filter) {
+    const grid = document.getElementById('productos-grid');
+    const list = filter === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.filter === filter);
+    grid.innerHTML = list.map(p => `
+      <article class="product-card reveal" data-id="${p.id}" tabindex="0" role="button" aria-label="Ver detalles de ${p.name}" style="cursor:pointer;">
+        <div class="product-card__img-placeholder" aria-hidden="true">
+          <img src="${p.photos[0]}" alt="${p.name}" loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;border-radius:0;"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="product-card__body">
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:.3rem;display:block;">${p.tag}</span>
+          <h3 class="product-card__name">${p.name}</h3>
+          <p class="product-card__desc">${p.short}</p>
+          <button class="btn btn-outline" onclick="openModal('${p.id}',event)">Ver detalles</button>
+        </div>
+      </article>
+    `).join('');
+
+    // Re-observe for reveal
+    grid.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (i * 60) + 'ms';
+      revealObserver.observe(el);
+    });
+
+    // Click on card (not button)
+    grid.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (!e.target.closest('.btn')) openModal(card.dataset.id, e);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') openModal(card.dataset.id, e);
+      });
+    });
+  }
+
+  // ---- Filter buttons ----
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      renderCards(btn.dataset.filter);
+    });
+  });
+
+  // ---- Modal ----
+  const overlay = document.getElementById('modal-overlay');
+  const modalClose = document.getElementById('modal-close');
+
+  function openModal(id, e) {
+    if (e) e.stopPropagation();
+    const p = PRODUCTS.find(x => x.id === id);
+    if (!p) return;
+
+    // Gallery
+    document.getElementById('modal-gallery').innerHTML = `
+      <div class="modal__gallery-main">
+        <img src="${p.photos[0]}" alt="${p.name}" id="modal-main-img" />
+      </div>
+      <div class="modal__gallery-thumbs">
+        ${p.photos.map((ph, i) => `
+          <img src="${ph}" alt="${p.name} foto ${i+1}" class="modal__thumb ${i===0?'active':''}"
+            onclick="setThumb(this,'${ph}')" loading="lazy" />
+        `).join('')}
+      </div>`;
+
+    document.getElementById('modal-tag').textContent   = p.tag;
+    document.getElementById('modal-title').textContent = p.name;
+    document.getElementById('modal-desc').textContent  = p.desc;
+    document.getElementById('modal-cta').href = `#contacto`;
+    document.getElementById('modal-cta').onclick = () => closeModal();
+
+    document.getElementById('modal-specs').innerHTML = `
+      <h4 class="modal__specs-title">Especificaciones</h4>
+      <ul class="modal__specs-list">
+        ${p.specs.map(s => `<li><span>${s.label}</span><strong>${s.value}</strong></li>`).join('')}
+      </ul>`;
+
+    overlay.hidden = false;
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+  }
+
+  function setThumb(el, src) {
+    document.getElementById('modal-main-img').src = src;
+    document.querySelectorAll('.modal__thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  function closeModal() {
+    overlay.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
   // ---- Scroll reveal ----
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer  = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Staggered delay based on siblings
-        const siblings = entry.target.parentElement.querySelectorAll('.reveal');
-        let idx = Array.from(siblings).indexOf(entry.target);
-        entry.target.style.transitionDelay = (idx * 80) + 'ms';
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1 });
 
-  revealEls.forEach(el => observer.observe(el));
+  function observeAll() {
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      if (!el.closest('#productos-grid')) {
+        el.style.transitionDelay = (i * 60) + 'ms';
+      }
+      revealObserver.observe(el);
+    });
+  }
 
   // ---- Contact form ----
   const form       = document.getElementById('contact-form');
@@ -561,12 +837,9 @@
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    // Basic validation
     const nombre  = form.nombre.value.trim();
     const email   = form.email.value.trim();
     const mensaje = form.mensaje.value.trim();
-
     if (!nombre || !email || !mensaje) {
       const firstEmpty = !nombre ? form.nombre : !email ? form.email : form.mensaje;
       firstEmpty.focus();
@@ -574,26 +847,23 @@
       setTimeout(() => { firstEmpty.style.borderColor = ''; }, 2000);
       return;
     }
-
-    // Simulate send
     submitBtn.disabled = true;
     submitBtn.textContent = 'Enviando…';
-
     setTimeout(() => {
       form.reset();
       submitBtn.disabled = false;
-      submitBtn.innerHTML = `
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        Enviar mensaje`;
+      submitBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Enviar mensaje`;
       successMsg.style.display = 'block';
       setTimeout(() => { successMsg.style.display = 'none'; }, 6000);
     }, 1200);
   });
-
-  // Clear red border on input
   form.querySelectorAll('input, textarea').forEach(el => {
     el.addEventListener('input', () => { el.style.borderColor = ''; });
   });
+
+  // ---- Init ----
+  renderCards('all');
+  observeAll();
 </script>
 
 </body>
