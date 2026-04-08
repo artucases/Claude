@@ -147,18 +147,11 @@ ul { list-style: none; }
   align-items: center;
   gap: .6rem;
 }
-.nav__logo-icon {
-  width: 36px; height: 36px;
+.nav__logo-svg {
+  height: 44px;
+  width: auto;
   flex-shrink: 0;
 }
-.nav__logo-text {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  letter-spacing: .06em;
-  color: var(--cream);
-  line-height: 1;
-}
-.nav__logo-text span { color: var(--red); }
 
 .nav__links {
   display: flex;
@@ -681,13 +674,10 @@ ul { list-style: none; }
   align-items: center;
   text-align: center;
 }
-.footer__logo {
-  font-family: var(--font-title);
-  font-size: 1.6rem;
-  letter-spacing: .06em;
-  color: var(--cream);
+.footer__logo-svg {
+  height: 52px;
+  width: auto;
 }
-.footer__logo span { color: var(--red); }
 .footer__links {
   display: flex;
   gap: 1.5rem;
