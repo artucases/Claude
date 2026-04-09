@@ -234,7 +234,7 @@ ul { list-style: none; }
   inset: 0;
   background:
     linear-gradient(to right, rgba(10,10,10,.92) 45%, rgba(10,10,10,.5) 100%),
-    url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80') center/cover no-repeat;
   z-index: 0;
 }
 .hero__content {
