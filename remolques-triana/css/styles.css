@@ -152,9 +152,20 @@ ul { list-style: none; }
   width: auto;
   flex-shrink: 0;
 }
+.nav__logo-img {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
 .footer__logo-svg {
   height: 64px;
   width: auto;
+}
+.footer__logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav__links {
@@ -681,6 +692,11 @@ ul { list-style: none; }
 .footer__logo-svg {
   height: 52px;
   width: auto;
+}
+.footer__logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
 }
 .footer__links {
   display: flex;
