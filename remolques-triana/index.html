@@ -763,17 +763,45 @@
     const p = PRODUCTS.find(x => x.id === id);
     if (!p) return;
 
-    // Gallery
-    document.getElementById('modal-gallery').innerHTML = `
-      <div class="modal__gallery-main">
-        <img src="${p.photos[0]}" alt="${p.name}" id="modal-main-img" />
-      </div>
-      <div class="modal__gallery-thumbs">
-        ${p.photos.map((ph, i) => `
-          <img src="${ph}" alt="${p.name} foto ${i+1}" class="modal__thumb ${i===0?'active':''}"
-            onclick="setThumb(this,'${ph}')" loading="lazy" />
-        `).join('')}
-      </div>`;
+    let current = 0;
+
+    function buildGallery() {
+      document.getElementById('modal-gallery').innerHTML = `
+        <div class="modal__gallery-main" style="position:relative;">
+          <img src="${p.photos[current]}" alt="${p.name}" id="modal-main-img" />
+          ${p.photos.length > 1 ? `
+          <button class="modal__nav modal__nav--prev" onclick="modalNav(-1)" aria-label="Anterior">&#8249;</button>
+          <button class="modal__nav modal__nav--next" onclick="modalNav(1)" aria-label="Siguiente">&#8250;</button>
+          <span class="modal__counter">${current+1} / ${p.photos.length}</span>
+          ` : ''}
+        </div>
+        <div class="modal__gallery-thumbs">
+          ${p.photos.map((ph, i) => `
+            <img src="${ph}" alt="${p.name} foto ${i+1}" class="modal__thumb ${i===0?'active':''}"
+              onclick="modalGoTo(${i})" loading="lazy" />
+          `).join('')}
+        </div>`;
+    }
+
+    window.modalNav = function(dir) {
+      current = (current + dir + p.photos.length) % p.photos.length;
+      document.getElementById('modal-main-img').src = p.photos[current];
+      document.getElementById('modal-main-img').style.opacity = '0';
+      setTimeout(() => { document.getElementById('modal-main-img').style.opacity = '1'; }, 50);
+      document.querySelectorAll('.modal__thumb').forEach((t,i) => t.classList.toggle('active', i===current));
+      document.querySelector('.modal__counter').textContent = `${current+1} / ${p.photos.length}`;
+    };
+
+    window.modalGoTo = function(idx) {
+      current = idx;
+      document.getElementById('modal-main-img').src = p.photos[current];
+      document.getElementById('modal-main-img').style.opacity = '0';
+      setTimeout(() => { document.getElementById('modal-main-img').style.opacity = '1'; }, 50);
+      document.querySelectorAll('.modal__thumb').forEach((t,i) => t.classList.toggle('active', i===current));
+      document.querySelector('.modal__counter').textContent = `${current+1} / ${p.photos.length}`;
+    };
+
+    buildGallery();
 
     document.getElementById('modal-tag').textContent   = p.tag;
     document.getElementById('modal-title').textContent = p.name;
@@ -797,6 +825,13 @@
     document.querySelectorAll('.modal__thumb').forEach(t => t.classList.remove('active'));
     el.classList.add('active');
   }
+
+  // Keyboard navigation in modal
+  document.addEventListener('keydown', (e) => {
+    if (overlay.hidden) return;
+    if (e.key === 'ArrowRight') { if (window.modalNav) window.modalNav(1); }
+    if (e.key === 'ArrowLeft')  { if (window.modalNav) window.modalNav(-1); }
+  });
 
   function closeModal() {
     overlay.hidden = true;
