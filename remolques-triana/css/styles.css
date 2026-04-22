@@ -245,7 +245,7 @@ ul { list-style: none; }
   inset: 0;
   background:
     linear-gradient(to right, rgba(10,10,10,.97) 50%, rgba(10,10,10,.55) 75%, rgba(10,10,10,.15) 100%),
-    url('../img/hero/hero1.jpg') center/cover no-repeat;
+    url('../img/hero/hero2.jpg') center/cover no-repeat;
   z-index: 0;
 }
 .hero__content {
