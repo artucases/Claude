@@ -474,10 +474,56 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
 }
+.refacciones__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.refacciones__photo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5);
+}
 .refacciones__icon {
   width: 100px; height: 100px;
   color: var(--red);
   opacity: .9;
+}
+
+/* =========================================
+   RENTA
+   ========================================= */
+.renta {
+  padding-block: 4rem;
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.renta__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: var(--carbon);
+  border: 1px solid rgba(200,16,46,.25);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+}
+@media (min-width: 768px) {
+  .renta__inner {
+    grid-template-columns: auto 1fr auto;
+    gap: 2.5rem;
+  }
+}
+.renta__icon svg {
+  width: 64px; height: 64px;
+  color: var(--red);
+}
+.renta__cta {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .refacciones__list {
   display: flex;
