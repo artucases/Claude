@@ -244,11 +244,10 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(10,10,10,.72) 0%, rgba(10,10,10,.42) 50%, rgba(10,10,10,.72) 100%),
-    url('../img/hero/heromovil.jpg') 95% center/cover no-repeat;
+    linear-gradient(to bottom, rgba(10,10,10,.75) 0%, rgba(10,10,10,.40) 50%, rgba(10,10,10,.75) 100%),
+    url('../img/hero/heromovil.jpg') center/cover no-repeat;
   z-index: 0;
 }
-.hero__img-mobile { display: none; }
 @media (min-width: 768px) {
   .hero__bg {
     background:
