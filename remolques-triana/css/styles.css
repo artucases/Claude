@@ -246,7 +246,7 @@ ul { list-style: none; }
   /* móvil: apunta al toro (lado derecho de la imagen) */
   background:
     linear-gradient(to bottom, rgba(10,10,10,.70) 0%, rgba(10,10,10,.40) 40%, rgba(10,10,10,.70) 100%),
-    url('../img/hero/hero2.jpg') 77% center/cover no-repeat;
+    url('../img/hero/hero2.jpg') 83% center/cover no-repeat;
   z-index: 0;
 }
 @media (min-width: 768px) {
